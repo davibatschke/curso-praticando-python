@@ -1,5 +1,5 @@
 import random
-def checando_ganhador(opcao_usuario, opcao_computador):
+def verificar_vencedor(opcao_usuario, opcao_computador):
     if (opcao_usuario == 'Pedra' and opcao_computador == 'Pedra' or 
         opcao_usuario == 'Papel' and opcao_computador == 'Papel' or
         opcao_usuario == 'Tesoura' and opcao_computador == 'Tesoura'):
@@ -21,4 +21,4 @@ opcao_computador = random.choice(jogadas_disponiveis)
 if opcao_usuario not in jogadas_disponiveis:
     print('A Jogada que você escolheu é Inválida.')
 else:
-    print(checando_ganhador(opcao_usuario, opcao_computador))
+    print(verificar_vencedor(opcao_usuario, opcao_computador))
